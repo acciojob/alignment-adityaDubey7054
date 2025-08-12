@@ -1,16 +1,150 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        /* General body and heading styling */
+        body {
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
 
+        /* General table styling */
+        table {
+            border: 1px solid black;
+            border-spacing: 1px; /* As per requirement */
+        }
+        
+        /* General cell styling */
+        td, th {
+            padding: 1px; /* As per requirement */
+            border: 1px solid black; /* Added for clarity on each cell */
+        }
+
+        /* Class to center tables */
+        .middle {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px; /* Space between tables */
+        }
+
+        /* Text alignment classes */
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        
+        /* Background color classes for Table 3 */
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+            color: white; /* Making text visible on blue background */
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1: 3x3 with specific classes and IDs -->
+    <table id="table-1" class="middle">
+        <tbody>
+            <tr>
+                <td id="t11">Row 1, Cell 1</td>
+                <td id="t12">Row 1, Cell 2</td>
+                <td id="t13" class="right">Row 1, Cell 3 (right)</td>
+            </tr>
+            <tr class="center"> <!-- Middle row with 'center' class -->
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td class="right">Row 2, Cell 3 (center, right)</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td class="right">Row 3, Cell 3 (right)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 2: 6x6 with a spanned first row -->
+    <table id="table-2" class="middle">
+        <tbody>
+            <tr>
+                <!-- Cell with ID 't21' spanning all 6 columns -->
+                <td id="t21" colspan="6" class="center">This is the header (t21)</td>
+            </tr>
+            <tr>
+                <td>R2, C1</td>
+                <td>R2, C2</td>
+                <td>R2, C3</td>
+                <td>R2, C4</td>
+                <td>R2, C5</td>
+                <td>R2, C6</td>
+            </tr>
+            <tr>
+                <td>R3, C1</td>
+                <td>R3, C2</td>
+                <td>R3, C3</td>
+                <td>R3, C4</td>
+                <td>R3, C5</td>
+                <td>R3, C6</td>
+            </tr>
+            <tr>
+                <td>R4, C1</td>
+                <td>R4, C2</td>
+                <td>R4, C3</td>
+                <td>R4, C4</td>
+                <td>R4, C5</td>
+                <td>R4, C6</td>
+            </tr>
+            <tr>
+                <td>R5, C1</td>
+                <td>R5, C2</td>
+                <td>R5, C3</td>
+                <td>R5, C4</td>
+                <td>R5, C5</td>
+                <td>R5, C6</td>
+            </tr>
+            <tr>
+                <td>R6, C1</td>
+                <td>R6, C2</td>
+                <td>R6, C3</td>
+                <td>R6, C4</td>
+                <td>R6, C5</td>
+                <td>R6, C6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 3: Includes an image and colored rows -->
+    <table id="table-3" class="middle">
+        <tbody>
+            <tr class="green"> <!-- First row with 'green' class -->
+                <td>Top Left</td>
+                <td>Top Right</td>
+            </tr>
+            <tr>
+                <!-- Cell with ID 't-image' containing the image -->
+                <td id="t-image">
+                    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                </td>
+                <td>This cell is next to the image.</td>
+            </tr>
+            <tr class="blue"> <!-- Last row with 'blue' class -->
+                <td>Bottom Left</td>
+                <td>Bottom Right</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
-
 </html>
